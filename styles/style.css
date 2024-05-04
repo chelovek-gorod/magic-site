@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cormorant Garamond", serif;
+}
+
+header {
+    color: #ffffff;
+    font-size: 40px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    box-shadow: 0px 9px 8px 0px #3e3359;
+
+    font-weight: 700;
+    font-style: italic;
+
+    background-image: url(../images/header_bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#slider {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+img.full-width {
+    width: 100%;
+}
+
+#slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/slide1.jpg);
+}
+
+#slider .smooth {
+    transition: transform 1200ms ease;
+}
+
+.used {
+    filter: grayscale(0.75);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    height: 200px;
+}
+
+nav {
+    text-align: center;
+    padding-top: 12px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 12px 24px;
+    border: solid 2px blue;
+    padding:  6px 24px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s linear, transform 0.3s linear ;
+}
+
+nav a:hover {
+    box-shadow: 0 3px 7px #00ff00;
+    transform: translateY(-6px)
+}
+
+footer {
+    background-color: blue;
+    color: #ffffff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0 -3px 7px #00ff00;
+}
+
+@media (max-width: 960px) {
+    p {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    nav a {
+        font-size: 13px;
+        margin: 6px 12px;
+        padding:  4px 16px;
+        border-radius: 12px;
+    }
+
+
+    header {
+        font-size: 30px;
+        height: 80px;
+        line-height: 80px;
+    }
+    
+    header h1 {
+        font-size: 30px;
+        height: 80px;
+    }
+}
